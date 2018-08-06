@@ -1,0 +1,13 @@
+Organizadas: LinkedHashSet, ArrayList, Vector, LinkedList, LinkedHashMap
+
+Não organizadas: HashSet, TreeSet, PriorityQueue, HashMap, HashTable, TreeMap
+
+Ordenadas: TreeSet, PriorityQueue, TreeMap
+
+Não ordenadas: HashSet, LinkedHashSet, ArrayList, Vector, LinkedList, HashMap, HashTable, LinkedHashMap.
+
+O HashSet<Aluno> atende a primeira condição, de não ter elementos repetidos, mas não possui ordenação.
+O ArrayList<Aluno> não é uma coleção, isto é, permite elementos repetidos.
+O LinkedHashSet<Aluno> atende o requisito de não ter elementos repetidos, por ser um conjunto, mas não garante ordenação.
+A implementação TreeSet já ordena os seus elementos na hora da inserção. 
+Qual é o critério da ordenação depende e pode ser definido através de um Comparator.

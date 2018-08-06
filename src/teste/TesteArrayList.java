@@ -1,4 +1,4 @@
-package List;
+package teste;
 
 /*
  * Com a classe ArrayList foi possivel usar os mesmos métodos da TesteAluno.
@@ -8,27 +8,24 @@ package List;
  */
 import java.util.ArrayList;
 
+import util.Aluno;
+
 public class TesteArrayList {
 
 	public static void main(String[] args) {
 
-		Aluno a1 = new Aluno();
-		Aluno a2 = new Aluno();
-		Aluno a3 = new Aluno();
-		Aluno a4 = new Aluno();
-		Aluno a5 = new Aluno();
-		Aluno a6 = new Aluno();
-		
-		a1.setNome("José");
-		a1.setPontos(100);
-		a2.setNome("Maria");
-		a2.setPontos(50);
-		a3.setNome("Paulo");
-		a3.setPontos(70);
-		a4.setNome("Bruna");
-		a4.setPontos(85);
-		a5.setNome("Rita");
-		a5.setPontos(20);
+		Aluno a1 = new Aluno("José",1112225);
+		Aluno a2 = new Aluno("Maria",2223569);
+		Aluno a3 = new Aluno("Paulo",3654789);
+		Aluno a4 = new Aluno("Bruna",3215698);
+		Aluno a5 = new Aluno("Rita", 4569877);
+		Aluno a6 = new Aluno("Rui", 9875466);
+
+		a1.setNota(10.0);
+		a2.setNota(5.0);
+		a3.setNota(7.0);
+		a4.setNota(8.5);
+		a5.setNota(2.0);
 		
 		ArrayList<Aluno> lista = new ArrayList<Aluno>();
 		
@@ -51,7 +48,6 @@ public class TesteArrayList {
 		System.out.println(lista);
 		
 		System.out.println("\nVerificando se o aluno está na lista:");
-		a6.setNome("Rui");
 		System.out.println(a1.toString() + "=>" + lista.contains(a1));
 		System.out.println(a4.toString() + "=>" + lista.contains(a4));
 		System.out.println(a6.toString() + "=>" + lista.contains(a6));

@@ -1,8 +1,6 @@
 
 package teste;
 
-import util.Equal;
-
 public class TesteEquals {
 
 	public static void main(String[] args) {

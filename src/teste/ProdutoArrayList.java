@@ -5,8 +5,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import util.Produto;
-
 class ProdutoNome implements Comparator<Produto> {
 
 	@Override
@@ -21,7 +19,7 @@ class ProdutoNome implements Comparator<Produto> {
 }
 
 
-public class testeArrayList {
+public class ProdutoArrayList {
 
 	public static void main(String[] args) {
 		List<Produto> produtos = new ArrayList<>();

@@ -1,4 +1,4 @@
-package util;
+package teste;
 /*
  * se dois objs são iguais o hashCode tem que ser igual:
  * 		obj1.equal(obj2) é true, entao obj1.hashCode() == obj2.hashCode();

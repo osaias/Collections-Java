@@ -1,4 +1,6 @@
-package List;
+package teste;
+
+import util.Aluno;
 
 /*
  * Esta classe está muita atrelada ao seu tipo, pois só é possivel criar

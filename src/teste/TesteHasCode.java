@@ -1,7 +1,5 @@
 package teste;
 
-import util.HashCode;
-
 public class TesteHasCode {
 
 	public static void main(String[] args) {

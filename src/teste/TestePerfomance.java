@@ -1,6 +1,8 @@
-package List;
+package teste;
 import java.util.ArrayList;
 import java.util.LinkedList;
+
+import util.Aluno;
 
 public class TestePerfomance {
 
@@ -10,9 +12,7 @@ public class TestePerfomance {
 		LinkedList<Aluno> listaLigada = new LinkedList<Aluno>();
 		ListaDeAlunos listaCriada = new ListaDeAlunos();
 		long numeroElementos = 100000;
-		Aluno a1 = new Aluno();
-		
-		a1.setNome("Jó");
+		Aluno a1 = new Aluno("Jó", 23658987);
 		
 		//ADICIONA NO COMEÇO
 		long inicio = System.currentTimeMillis();

@@ -1,4 +1,6 @@
-package List;
+package teste;
+
+import util.Aluno;
 
 /*
  * Esta classe cria uma instancia do tipo Object 
