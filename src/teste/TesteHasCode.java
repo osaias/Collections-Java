@@ -1,6 +1,6 @@
 package teste;
 
-import colecoes.HashCode;
+import util.HashCode;
 
 public class TesteHasCode {
 

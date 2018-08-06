@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import colecoes.Produto;
+import util.Produto;
 
 class ProdutoNome implements Comparator<Produto> {
 

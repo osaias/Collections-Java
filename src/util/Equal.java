@@ -1,4 +1,4 @@
-package colecoes;
+package util;
 /* 
  * Contrato:
  * Reflexivo: x.equals(x) tem que ser true para tudo que for diferente de null.

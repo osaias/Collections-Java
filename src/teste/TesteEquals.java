@@ -1,7 +1,7 @@
 
 package teste;
 
-import colecoes.Equal;
+import util.Equal;
 
 public class TesteEquals {
 

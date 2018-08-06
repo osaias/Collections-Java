@@ -1,4 +1,4 @@
-package colecoes;
+package util;
 
 public class Produto implements Comparable<Produto> {
 
