@@ -7,43 +7,20 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 /**
- * @author osaias.saraiva
- *
- * Classe que representa o curso.<br>
+ * Classe que representa o curso.
  * Contém uma lista de alunos e aulas, e os instrutores do curso.
+ * 
+ * @author osaias.saraiva
  */
 public class Curso {
 
-	/**
-	 * Atributo que representa os alunos matriculados no curso.<br>
-	 * Foi utilizado uma <strong>LinkedList</strong> para recuperar o aluno
-	 * pelo seu nome.<br>
-	 * Lembrando que esta lista não é indexada. Porém a performance de inserção
-	 *  ou remoção de novos alunos no meio da lista é melhor.
-	 * 
-	 */
+	
 	private List<Aluno> alunos = new LinkedList<>();
 
-	/**
-	 * Atributo que representa os instrutores do curso.<br>
-	 * Foi utilizado um <HashSet> para armazenar os instrutores 
-	 * do curso. Neste caso, os instrutores serão recuperados 
-	 * usando os métodos equals() e hashCode() da classe 
-	 * <strong>Instrutor</Strong>.<br>
-	 * A interface <strong>Set</strong> não tem metodo get() para 
-	 * recuperar elementos.
-	 */
+	
 	private Set<Instrutor> instrutores = new HashSet<>();
 
-	/**
-	 * Atributo que repesenta as aulas do curso.<br>
-	 * Foi utilizado uma <strong>ArrayList</strong> pra recuperar o aulas
-	 * pelo seu indice ou nome.<br>
-	 * Este tipo de lista é indexada, com isso, favorece a recuperação de
-	 *  elementos pelo seu indice. Porém a inserção e remoção de novas aulas 
-	 *  no meio da lista tende a ser mais lenta, devido a necessidade de realocar 
-	 *  todos os outros elementos à partir do indice de inserção/remoção do novo elemento.
-	 */
+	
 	private List<Aula> aulas = new ArrayList<>();
 
 
@@ -76,6 +53,15 @@ public class Curso {
 		return this.alunos.contains(aluno);
 	}
 
+	/**
+	 * Atributo que representa os alunos matriculados no curso.
+	 * Foi utilizado uma LinkedList para recuperar o aluno
+	 * pelo seu nome.
+	 * Lembrando que esta lista não é indexada. Porém a performance de inserção
+	 *  ou remoção de novos alunos no meio da lista é melhor.
+	 * 
+	 * @author osaias.saraiva
+	 */
 	public Aluno getAluno(Aluno aluno) {
 
 		if (aluno == null) {
@@ -89,6 +75,17 @@ public class Curso {
 		return this.alunos.get(this.alunos.indexOf(aluno));
 	}
 
+	/**
+	 * Atributo que representa os instrutores do curso.
+	 * Foi utilizado um HashSet para armazenar os instrutores 
+	 * do curso. Neste caso, os instrutores serão recuperados 
+	 * usando os métodos equals() e hashCode() da classe 
+	 * Instrutor.
+	 * A interface Set não tem metodo get() para 
+	 * recuperar elementos.
+	 * 
+	 * @author osaias.saraiva
+	 */
 	public void adicionaInstrutor(Instrutor instrutor) {
 
 		if (instrutor == null) {
@@ -181,6 +178,17 @@ public class Curso {
 		return this.aulas.contains(aula);
 	}
 
+	/**
+	 * Atributo que repesenta as aulas do curso.
+	 * Foi utilizado uma ArrayList pra recuperar o aulas
+	 * pelo seu indice ou nome.
+	 * Este tipo de lista é indexada, com isso, favorece a recuperação de
+	 *  elementos pelo seu indice. Porém a inserção e remoção de novas aulas 
+	 *  no meio da lista tende a ser mais lenta, devido a necessidade de realocar 
+	 *  todos os outros elementos à partir do indice de inserção/remoção do novo elemento.
+	 *  
+	 *  @author osaias.saraiva
+	 */
 	public Aula getAula(Aula aula) {
 
 		if (aula == null) {

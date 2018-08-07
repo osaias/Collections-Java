@@ -11,3 +11,27 @@ O ArrayList<Aluno> não é uma coleção, isto é, permite elementos repetidos.
 O LinkedHashSet<Aluno> atende o requisito de não ter elementos repetidos, por ser um conjunto, mas não garante ordenação.
 A implementação TreeSet já ordena os seus elementos na hora da inserção. 
 Qual é o critério da ordenação depende e pode ser definido através de um Comparator.
+
+LIST:
+LinkedList: usada para manter a ordem de inserção dos elementos e para inserir/remover elementos no meio da lista 
+devido a sua boa performance. Permite elementos repetidos.
+
+ArrayList: é ideal para recuperação de elementos atravez do seu indice. A inserção/remoção/recuperação de elementos
+é aleatória, porem para inserção/remoção de elementos no meio da lista não é indicada.
+
+Vector: é tread-safe, só é indicado para aplicações que necessitam ser sincronizadas.
+
+
+SET:
+HashSet: usada para criar um conjunto de elementos que não sejam repetidos. É ideal para recuperação de elementos,
+perém não mantem a ordem dos mesmos.
+
+TreeSet: usada para criar um conjunto de elementos que não sejam repetidos e ordenação automática. É ideal para recuperação de elementos e
+quando se deseja manter a ordem dos elementos. Porém a inserção/remoção tem um custo mais alto do HashSet por causa da sua
+ordenação automática.
+
+LinkedHashSet: usada para criar um conjunto de elementos que não sejam repetidos e manter a ordem de inserção dos elementos.
+ É ideal para recuperação de elementos e tem a mesma performance que o hashSet.
+
+
+

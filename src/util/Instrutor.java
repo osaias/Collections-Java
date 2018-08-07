@@ -2,10 +2,10 @@ package util;
 
 /**
  * 
- * @author osaias.saraiva
- *
- * Classe que representa um instrutor do curso.<br>
+ * Classe que representa um instrutor do curso.
  * Recebe no construtor o nome como paramentro.
+ * 
+ *  @author osaias.saraiva
  */
 public class Instrutor {
 

@@ -2,11 +2,11 @@ package util;
 
 /**
  * 
- * @author osaias.saraiva
- *
- *Classe que representa a aula do curso.<br>
+ * Classe que representa a aula do curso.<br>
  *Contém o nome da aula, numero e descrição.
  *Recebe como parametros no construtor o número e o nome da aula.
+ *
+ *@author osaias.saraiva
  */
 public class Aula {
 
