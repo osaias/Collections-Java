@@ -2,7 +2,7 @@ package util;
 
 /**
  * 
- *  que representa o aluno matriculado no curso.
+ *  Classe que representa o aluno matriculado no curso.
  * O aluno contém o nome, nota geral, e o numero da matricula.
  * Recebe no construtor o nome e a matricula como parametros.
  * 
@@ -13,7 +13,6 @@ package util;
 public class Aluno {
 	
 	private String nome;
-	
 
 	private double nota;
 	
